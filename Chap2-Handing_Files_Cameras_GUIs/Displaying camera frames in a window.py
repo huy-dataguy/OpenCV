@@ -18,6 +18,7 @@ cv.setMouseCallback('My camera', OnMouse)
 #Vì vậy dù các tham số trong hàm OnMouse không sử dụng, nhưng vẫn cần phải có để  setMouseCallback đủ 5 tham số
 #Các tham số kia không gì thì mặc định giá trị sẽ bằng 0
 
+print('Showing camera feed. Click window or press any key to stop.')
 while success and cv.waitKey(1) == -1 and not clicked :
     cv.imshow('My camera', frame)
     success, frame = vidCap.read()
