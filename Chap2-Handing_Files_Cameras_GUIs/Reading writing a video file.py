@@ -19,3 +19,4 @@ success, frame = videoCapture.read()
 while success: # Loop until there are no more frames.
     videoWriter.write(frame)
     success, frame = videoCapture.read()
+    
